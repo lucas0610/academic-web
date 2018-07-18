@@ -1,3 +1,5 @@
+import { ParentsComponent } from './../parents/parents.component';
+import { NecessitiesComponent } from './../necessities/necessities.component';
 import { MatriculaComponent } from './../matricula.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,7 +17,7 @@ import { DocumentsComponent } from '../documents/documents.component';
     RouterModule.forChild([
       {
         path:'matricula',
-        component: MatriculaComponent, canActivate:[AuthGuard], 
+        component: MatriculaComponent, canActivate:[AuthGuard], canActivateChild:[AuthGuard], 
         children:[
           {
             path:'',
@@ -24,12 +26,14 @@ import { DocumentsComponent } from '../documents/documents.component';
           },
           {path:'basic', component: BasicComponent},
           {path:"documents", component: DocumentsComponent},
-          
+          {path:"necessities", component:NecessitiesComponent},
+          {path:"parents",component: ParentsComponent}
         ]
       }
 
     ])
   ],
-  declarations: [MatriculaRoutingComponent]
+  declarations: [MatriculaRoutingComponent],
+  exports:[RouterModule]
 })
 export class MatriculaRoutingModule { }
