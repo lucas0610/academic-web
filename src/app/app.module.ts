@@ -14,16 +14,19 @@ import { AppComponent } from './app.component';
 import { MatriculaComponent } from './matricula/matricula.component';
 
 
+
 @NgModule({
    declarations: [
       AppComponent,
-      MatriculaComponent
+      MatriculaComponent 
+    
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       AuthModule,
-      AdminModule
+      AdminModule,
+
    ],
    providers: [
     AuthGuard,

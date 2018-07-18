@@ -1,3 +1,4 @@
+import { AdminDashboard4Component } from './admin-dashboard4/admin-dashboard4.component';
 import { AdminDashboard3Component } from './admin-dashboard3/admin-dashboard3.component';
 import { AdminRoutingModule } from './admin-routing/admin-routing.module';
 import { AdminDashboard1Component } from './admin-dashboard1/admin-dashboard1.component';
@@ -10,6 +11,9 @@ import { AdminComponent } from './admin.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.component';
+import { AdminDashboard5Component } from './admin-dashboard5/admin-dashboard5.component';
+import { AdminDashboard6Component } from './admin-dashboard6/admin-dashboard6.component';
+import { AdminDashboard7Component } from './admin-dashboard7/admin-dashboard7.component';
 
 @NgModule({
   imports: [
@@ -25,7 +29,11 @@ import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.co
     AdminControlSidebarComponent,
     AdminDashboard1Component,
     AdminDashboard2Component,
-    AdminDashboard3Component
+    AdminDashboard3Component,
+    AdminDashboard4Component,
+    AdminDashboard5Component,
+    AdminDashboard6Component,
+    AdminDashboard7Component
   ],
   exports: [AdminComponent]
 })

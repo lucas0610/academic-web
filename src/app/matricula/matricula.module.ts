@@ -11,6 +11,13 @@ import { HomeAddressComponent } from './home-address/home-address.component';
   imports: [
     CommonModule
   ],
-  declarations: [MatriculaComponent, BasicComponent, DocumentsComponent, NecessitiesComponent, ParentsComponent, HomeAddressComponent]
+  declarations: [
+    MatriculaComponent, 
+    BasicComponent, 
+    DocumentsComponent,
+    NecessitiesComponent, 
+    ParentsComponent, 
+    HomeAddressComponent],
+  exports: [MatriculaComponent]
 })
 export class MatriculaModule { }
