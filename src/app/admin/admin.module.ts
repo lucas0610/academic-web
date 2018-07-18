@@ -1,3 +1,4 @@
+import { AdminDashboard3Component } from './admin-dashboard3/admin-dashboard3.component';
 import { AdminRoutingModule } from './admin-routing/admin-routing.module';
 import { AdminDashboard1Component } from './admin-dashboard1/admin-dashboard1.component';
 import { AdminControlSidebarComponent } from './admin-control-sidebar/admin-control-sidebar.component';
@@ -23,7 +24,8 @@ import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.co
     AdminFooterComponent,
     AdminControlSidebarComponent,
     AdminDashboard1Component,
-    AdminDashboard2Component
+    AdminDashboard2Component,
+    AdminDashboard3Component
   ],
   exports: [AdminComponent]
 })
