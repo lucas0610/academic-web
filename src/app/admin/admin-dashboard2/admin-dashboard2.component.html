@@ -14,41 +14,44 @@
     <!-- Main row -->
     <div class="container">
       <div class="row justify-content-md-center">
-       <div class="jumbotron col-sm-8">
+       <div class="jumbotron">
         <h3>Documentação</h3>
         <form>
-          <div class="form-group">
-            <label for="exampleInputCpf">CPF</label>
-            <input type="number" class="form-control" id="exampleInputCpf" aria-describedby="emailHelp">
-          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="exampleInputCpf">CPF</label>
+              <input type="number" class="form-control" id="exampleInputCpf" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputDate">Nis</label>
+              <input type="number" class="form-control" placeholder="Somente números">
+            </div>
 
-          <div class="form-group">
-            <label for="exampleInputDate">Nis</label>
-            <input type="number" class="form-control" placeholder="Somente números">
-          </div>
+            <div class="form-group">
+              <label for="exampleInputDate">Número do Sus</label>
+              <input type="number" class="form-control" placeholder="Somente números">
+            </div>
 
-           <div class="form-group">
-            <label for="exampleInputDate">Número do Sus</label>
-            <input type="number" class="form-control" placeholder="Somente números">
+            <div class="form-group">
+              <label for="exampleInputDate">Número do Rg</label>
+              <input type="number" class="form-control" placeholder="Somente números">
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="exampleInputDate">Número do Rg</label>
-            <input type="number" class="form-control" placeholder="Somente números">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputDate">Data de emissão</label>
-            <input type="date" class="form-control" placeholder="Somente números">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputAgencia">Agência de emissão</label>
-            <input type="text" class="form-control" id="exampleInputAgencia">
-          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="exampleInputDate">Data de emissão</label>
+              <input type="date" class="form-control" placeholder="Somente números">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputAgencia">Agência de emissão</label>
+              <input type="text" class="form-control" id="exampleInputAgencia">
+            </div>
          <div class="form-group">
             <label for="exampleInputIngress">Ano de entrada</label>
             <input type="date" class="form-control" >
          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button routerLink="dashboard3" class="btn btn-primary">Submit</button>
+        </div>
         </form>
       </div>
     </div>

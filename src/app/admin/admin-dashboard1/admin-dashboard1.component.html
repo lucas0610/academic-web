@@ -14,53 +14,70 @@
     <!-- Main row -->
     <div class="container">
       <div class="row justify-content-md-center">
-       <div class="jumbotron col-sm-8">
-        <h3>Informações Basicas</h3>
+       <div class="jumbotron">
+        <h3>Informações Basicas</h3>  
+       
         <form>
-          <div class="form-group">
-            <label for="exampleInputName">Nome</label>
-            <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp" placeholder="Nome Completo">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputDate">Data de nascimento</label>
-            <input type="date" class="form-control" id="InputDate" placeholder="Data de Nascimento">
-          </div>
-         <div class="form-group">
-          <label for="exampleInputSex">Sexo</label>
-          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="exampleInputName">Nome</label>
+              <input type="text" class="form-control" id="InputName"
+                placeholder="Nome Completo">
+            </div>
+  
+            <div class="form-group">
+              <label for="exampleInputDate">Data de nascimento</label>
+              <input type="date" class="form-control" id="InputDate" 
+              placeholder="Data de Nascimento">
+            </div>
+            
+           <div class="form-group">
+            <label for="exampleInputSex">Sexo</label>
+            </div>
+  
+            <div class="form-group">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+            <label for="form-check-label" for="exampleCheck1">Masculino</label>
+            </div>
 
-          <div class="form-group">
-          <input type="checkbox" aria-label="Checkbox for following text input">
-          <label for="form-check-label" for="exampleCheck1">Masculino</label>
-          </div>
-          <div class="form-group">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label for="form-check-label" for="exampleCheck2">Feminino</label>
-          </div>
+            <div class="form-group">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label for="form-check-label" for="exampleCheck2">Feminino</label>
+            </div>
+          </div>   
+              <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleInputCor">Cor/Etinia</label>
+                    <input type="text" class="form-control">
+                  </div>
 
-          <div class="form-group">
-            <label for="exampleInputCor">Cor/Etinia</label>
-            <input type="text" class="form-control">
-          </div>
+                <div class="form-group">
+                    <label for="exampleInputIngress">Ano de entrada</label>
+                    <input type="date" id="InputDateIngress" class="form-control" >
+                </div>
 
-          <div class="form-group">
-            <label for="exampleInputCivilState">Estado Civíl</label>
-         </div>
-         <div class="form-group">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label for="form-check-label" for="exampleCheck3">Solteiro</label>
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label for="form-check-label" for="exampleCheck4">Casado</label>
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label for="form-check-label" for="exampleCheck5">Viúvo</label>
-         </div>
-         <div class="form-group">
-            <label for="exampleInputIngress">Ano de entrada</label>
-            <input type="date" id="InputDateIngress" class="form-control" >
-         </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <div class="form-group">
+                    <label for="exampleInputCivilState">Estado Civíl</label>
+                  </div>
+
+                <div class="form-group">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label for="form-check-label" for="exampleCheck3">Solteiro</label>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label for="form-check-label" for="exampleCheck4">Casado</label>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label for="form-check-label" for="exampleCheck5">Viúvo</label>
+                </div>
+
+                <ul class="treeview-menu">
+                 <a class="active" routerLink="dashboard2"><button class="btn btn-primary">Próximo</button></a>
+                </ul>
+                
+          </div>
+          </form>
+        
+        </div>
       </div>
-    </div>
+   </div>
 </div>
-</div>
+

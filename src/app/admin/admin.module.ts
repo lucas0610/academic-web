@@ -1,3 +1,4 @@
+import { AdminDiariosComponent } from './admin-diarios/admin-diarios.component';
 import { AdminDashboard4Component } from './admin-dashboard4/admin-dashboard4.component';
 import { AdminDashboard3Component } from './admin-dashboard3/admin-dashboard3.component';
 import { AdminRoutingModule } from './admin-routing/admin-routing.module';
@@ -33,7 +34,8 @@ import { AdminDashboard7Component } from './admin-dashboard7/admin-dashboard7.co
     AdminDashboard4Component,
     AdminDashboard5Component,
     AdminDashboard6Component,
-    AdminDashboard7Component
+    AdminDashboard7Component,
+    AdminDiariosComponent
   ],
   exports: [AdminComponent]
 })

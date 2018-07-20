@@ -1,3 +1,4 @@
+import { AdminDiariosComponent } from './../admin-diarios/admin-diarios.component';
 import { AdminDashboard3Component } from './../admin-dashboard3/admin-dashboard3.component';
 import { BasicComponent } from './../../matricula/basic/basic.component';
 import { NgModule, Component } from '@angular/core';
@@ -30,10 +31,11 @@ import { AdminDashboard7Component } from '../admin-dashboard7/admin-dashboard7.c
           { path: 'dashboard1', component: AdminDashboard1Component },
           { path: 'dashboard2', component: AdminDashboard2Component },
           { path: 'dashboard3', component: AdminDashboard3Component},
-          { path:'dashboard4', component: AdminDashboard4Component},
-          { path:'dashboard5', component: AdminDashboard5Component},
-          { path:'dashboard6', component: AdminDashboard6Component},
-          { path:'dashboard7', component: AdminDashboard7Component},
+          { path: 'dashboard4', component: AdminDashboard4Component},
+          { path: 'dashboard5', component: AdminDashboard5Component},
+          { path: 'dashboard6', component: AdminDashboard6Component},
+          { path: 'dashboard7', component: AdminDashboard7Component},
+          { path: 'diarios', component:AdminDiariosComponent},
           { path: 'profile', component: ProfileComponent },
         ]
       }
