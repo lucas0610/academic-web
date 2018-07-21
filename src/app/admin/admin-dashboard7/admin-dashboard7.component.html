@@ -18,49 +18,59 @@
         <h3>Informações Basicas</h3>  
         </div>
         <form>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="InputZipCode">Cep</label>
-              <input type="number" class="form-control" id="InputZipCode">
-            </div>
-  
-            <div class="form-group">
-              <label for="exampleInputDate">Estado</label>
-              <input type="text" class="form-control" id="InputUf" 
-              placeholder="Data de Nascimento">
-            </div>
-            
-             <div class="form-group">
-              <label for="exampleInputCor">Cidade</label>
-              <input type="text" class="form-control" id="InputCity">
-            </div>
-  
-           <div class="form-group">
-              <label for="exampleInputIngress">Bairro</label>
-              <input type="date" id="InputNeighorhood" class="form-control" >
-           </div>
+          <div class="form-group">
+            <label for="cp">Codigo Postal</label>
+            <input type="text" id="cp" name="zip_code"
+              class="form-control" placeholder="Codigo Postal"
+              [(ngModel)] = "student.home.zip_code"/>
           </div>
-
-          <div class="col-sm-6">
-           <div class="form-group">
-              <label for="exampleInputIngress">Rua</label>
-              <input type="text" id="InputStreet" class="form-control" >
-           </div>
-
-           <div class="form-group">
-              <label for="exampleInputIngress">Número</label>
-              <input type="number" id="InputNumber" class="form-control" >
-           </div>
-
-           <div class="form-group">
-              <label for="exampleInputIngress">Complemento</label>
-              <input type="text" id="InputNumber" class="form-control" >
-           </div>
+    
+          <div class="form-group">
+            <label for="estd">Estado</label>
+            <input type="estd" id="nome" name="uf"
+              class="form-control" placeholder="Estado"
+              [(ngModel)] = "student.home.uf"/>
+          </div>
+    
+          <div class="form-group">
+              <label for="cyt">Cidade</label>
+              <input type="text" id="cyt" name="city"
+                class="form-control" placeholder="cidade"
+                [(ngModel)] = "student.home.city"/>
+            </div>
+    
+            <div class="form-group">
+              <label for="barr">Barrio</label>
+              <input type="email" id="barr" name="neighorhood"
+                class="form-control" placeholder="Barrio"
+                [(ngModel)] = "student.home.neighorhood"/>
+            </div>
+    
+    
+            <div class="form-group">
+              <label for="rur">Rua</label>
+              <input type="rur" id="email" name="street"
+                class="form-control" placeholder="Rua"
+                [(ngModel)] = "student.home.street"/>
+            </div>
+    
+            <div class="form-group">
+              <label for="npn">Numero</label>
+              <input type="email" id="npn" name="home.number"
+                class="form-control" placeholder="Numero"
+                [(ngModel)] = "student.home.number"/>
+            </div>
+    
+            <div class="form-group">
+              <label for="clt">Complemento</label>
+              <input type="email" id="clt" name="complement"
+                class="form-control" placeholder="Numero"
+                [(ngModel)] = "student.home.complement"/>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
+         
           </form>
-
+        </div>
       </div>
    </div>
-</div>
 

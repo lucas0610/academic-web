@@ -15,6 +15,7 @@ import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.co
 import { AdminDashboard5Component } from './admin-dashboard5/admin-dashboard5.component';
 import { AdminDashboard6Component } from './admin-dashboard6/admin-dashboard6.component';
 import { AdminDashboard7Component } from './admin-dashboard7/admin-dashboard7.component';
+import { AdminTemplateComponent} from './admin-template/admin-template.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { AdminDashboard7Component } from './admin-dashboard7/admin-dashboard7.co
     AdminDashboard5Component,
     AdminDashboard6Component,
     AdminDashboard7Component,
-    AdminDiariosComponent
+    AdminDiariosComponent,
+    AdminTemplateComponent
   ],
   exports: [AdminComponent]
 })

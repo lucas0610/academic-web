@@ -17,49 +17,66 @@
        <div class="jumbotron">
         <h3>Certificação</h3>
         <form>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="exampleInputCpf">Tipo</label>
-              <input type="text" class="form-control" id="exampleInputCpf" aria-describedby="emailHelp">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputDate">Certidão civíl de nascimento</label>
-              <input type="text" class="form-control" placeholder="Somente números">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputDate">Número</label>
-              <input type="number" class="form-control" placeholder="Somente números">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputDate">N° Livro</label>
-              <input type="number" class="form-control" placeholder="Somente números">
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="exampleInputDate">Folha</label>
-              <input type="number" class="form-control" placeholder="Somente números">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputAgencia">Data de emissão</label>
-              <input type="date" class="form-control" id="exampleInputAgencia">
-            </div>
           <div class="form-group">
-              <label for="exampleInputIngress">Estado</label>
-              <input type="text" class="form-control" >
+            <label for="tc">Tipo de certificado</label>
+            <input type="text" id="tc" name="type"
+              class="form-control" placeholder="Tipo de certificado"
+              [(ngModel)] = "student.documents.certificate.type"/>
           </div>
+    
           <div class="form-group">
-            <label for="exampleInputIngress">Cidade</label>
-            <input type="text" class="form-control" >
+            <label for="crc">cartório de registro civil</label>
+            <input type="text" id="crc" name="civil_registry_office"
+              class="form-control" placeholder="cartório de registro civil"
+              [(ngModel)] = "student.documents.certificate.civil_registry_office"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="nc">numero do certificado</label>
+            <input type="number" id="nc" name="number"
+              class="form-control" placeholder="numero do certificado"
+              [(ngModel)] = "student.documents.certificate.number"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="nl">número do livro</label>
+            <input type="number" id="nl" name="book_number"
+              class="form-control" placeholder="número do livro"
+              [(ngModel)] = "student.documents.certificate.book_number"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="np">Numero da pagina</label>
+            <input type="number" id="np" name="page_number"
+              class="form-control" placeholder="Numero da pagina"
+              [(ngModel)] = "student.documents.certificate.page_number"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="dec">Data de emissão do certificado</label>
+            <input type="data" id="dec" name="emission_date"
+              class="form-control" placeholder="Data de emissão"
+              [(ngModel)] = "student.documents.certificate.mission_date"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="uf">Estado</label>
+            <input type="text" id="uf" name="uf"
+              class="form-control" placeholder="wuuuuu"
+              [(ngModel)] = "student.documents.certificate.uf"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="cid">Cidade</label>
+            <input type="text" id="cid" name="city"
+              class="form-control" placeholder="Cidade"
+              [(ngModel)] = "student.documents.certificate.city"/>
           </div>
           <button routerLink="dashboard4" class="btn btn-primary">Próximo</button>
-        </div>
+        
         </form>
+      </div>
       </div>
     </div>
 </div>
-</div>
+

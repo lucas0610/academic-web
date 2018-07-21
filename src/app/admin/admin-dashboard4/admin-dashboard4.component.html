@@ -18,21 +18,40 @@
         <h3>Nacionalidade</h3>  
         
         <form>
-            <div class="form-group">
-              <label for="exampleInputName">Nome</label>
-              <input type="text" class="form-control" id="InputName"
-                placeholder="Nome Completo">
-            </div>
-  
-            <div class="form-group">
-              <label for="exampleInputDate">Data de nascimento</label>
-              <input type="date" class="form-control" id="InputDate" 
-              placeholder="Data de Nascimento">
-            </div>
-            
-           <div class="form-group">
-            <label for="exampleInputSex">Sexo</label>
-            </div>
+          <div class="form-group">
+            <label for="pais">Pais</label>
+            <input type="text" id="pais" name="country"
+              class="form-control" placeholder="pais"
+              [(ngModel)] = "student.documents.nationality.country"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="estad">Estado</label>
+            <input type="text" id="estad" name="uf"
+              class="form-control" placeholder="Estado"
+              [(ngModel)] = "student.documents.nationality.uf"/>
+          </div>
+
+          <div class="form-group">
+            <label for="pais">Pais</label>
+            <input type="text" id="pais" name="city"
+              class="form-control" placeholder="Cidade"
+              [(ngModel)] = "student.documents.nationality.city"/>
+          </div>
+
+          <div class="form-group">
+            <label for="fny">Comida Especial</label>
+            <input type="text" id="fny" name="food_necessity"
+              class="form-control" placeholder="Necessidade Especial"
+              [(ngModel)] = "student.necessities.food_necessity"/>
+          </div>
+    
+          <div class="form-group">
+            <label for="eny">Edução especial</label>
+            <input type="text" id="eny" name="educational_necessity"
+              class="form-control" placeholder="Edução especial"
+              [(ngModel)] = "student.necessities.educational_necessity"/>
+          </div>
   
             <button routerLink="dashboard5" class="btn btn-primary">Submit</button>
           </form>
